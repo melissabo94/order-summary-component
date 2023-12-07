@@ -1,0 +1,133 @@
+/* ### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%) */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(./images/pattern-background-desktop.svg);
+    height: calc(100vh - 0.1px);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 400px;
+}
+
+.summary {
+    background-color: white;
+    margin-top: -0.3rem;
+    text-align: center;
+    border-radius: 0 0 1rem 1rem;
+    box-shadow: 0px 10px 80px hsl(228, 84%, 83%);
+}
+
+.image img {
+    border-radius: 1rem 1rem 0 0;
+    width: 100%;
+    object-fit: cover;
+}
+
+.plan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    margin: 0.5rem 2rem 0 2rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.price {
+    margin-right: 4.5rem;
+    margin-left: 1rem;
+}
+
+h2 {
+    padding: 2rem 0 1rem 0;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+.intro p {
+    padding: 0 2rem 1rem 2rem;
+    color: hsl(224, 23%, 55%)
+}
+
+.annual {
+    font-weight: 800;
+    color: hsl(223, 47%, 23%);
+    margin-bottom: 0.3rem;
+}
+
+.year {
+    color: hsl(224, 23%, 55%)
+}
+
+.change {
+    color: hsl(245, 75%, 52%);
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.change:hover {
+    cursor: pointer;
+    color: hsl(245, 89%, 73%);
+    text-decoration: none;
+}
+
+.btn {
+    width: 85%;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0.625rem;
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    color: white;
+    font-style: inherit;
+    font-weight: 700;
+    padding: 1rem 0 1rem 0;
+    box-shadow: 1px 10px 30px hsl(242, 61%, 68%);
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: hsl(245, 76%, 80%);
+}
+
+.payment p {
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+    font-size: 13px;
+    padding-bottom: 2.5rem;
+
+}
+
+.payment p:hover {
+    cursor: pointer;
+    color:hsl(223, 47%, 23%);
+}
+
+@media (max-width:767px) {
+    body {
+        background-image: url(images/pattern-background-mobile.svg);
+    }
+}
